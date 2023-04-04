@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <com.github.kwasow.bottomnavigationcircles.BottomNavigationCircles
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="30dp"
+            app:itemTextColor="#2754D6"
+            app:backgroundTint="@color/black"
+            app:menu="@menu/menu_bottom_navigation_bar"/>
+
+
+
+</RelativeLayout>
