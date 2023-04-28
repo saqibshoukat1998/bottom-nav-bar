@@ -16,8 +16,5 @@
         android:id="@+id/action_crypto"
         android:title="Test 4"
         android:icon="@drawable/bottom_nav_calander" />
-    <item
-        android:id="@+id/action_settings"
-        android:title="Test 5"
-        android:icon="@drawable/bottom_nav_calander" />
+
 </menu>
