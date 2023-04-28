@@ -11,10 +11,15 @@
             android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+
+            android:background="@color/white"
+            app:elevation="0dp"
+            app:itemPaddingBottom="10dp"
+
             android:layout_alignParentBottom="true"
-            app:itemIconSize="30dp"
+            app:itemIconSize="20dp"
             app:itemTextColor="#2754D6"
-            app:backgroundTint="@color/black"
+            app:labelVisibilityMode="labeled"
             app:menu="@menu/menu_bottom_navigation_bar"/>
 
 

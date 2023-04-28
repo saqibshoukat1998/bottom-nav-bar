@@ -3,21 +3,21 @@
     <item
         android:id="@+id/action_home"
         android:title="Test 1"
-        android:icon="@drawable/ic_home" />
+        android:icon="@drawable/bottom_nav_calander" />
     <item
         android:id="@+id/action_banking"
         android:title="Test 2"
-        android:icon="@drawable/ic_credit_card" />
+        android:icon="@drawable/bottom_nav_calander" />
     <item
         android:id="@+id/action_stocks"
         android:title="Test 3"
-        android:icon="@drawable/ic_graph" />
+        android:icon="@drawable/bottom_nav_calander" />
     <item
         android:id="@+id/action_crypto"
         android:title="Test 4"
-        android:icon="@drawable/ic_dollar" />
+        android:icon="@drawable/bottom_nav_calander" />
     <item
         android:id="@+id/action_settings"
         android:title="Test 5"
-        android:icon="@drawable/ic_settings" />
+        android:icon="@drawable/bottom_nav_calander" />
 </menu>
