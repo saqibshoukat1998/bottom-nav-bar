@@ -230,12 +230,25 @@ class BottomNavigationCircles : BottomNavigationView {
             rootLayout.addView(circleView)
             findViewById<BottomNavigationMenuView>(menuViewGroupId).bringToFront()
 
+//            setCircleSizeAndPosition(
+//                circleView,
+//                subText.height,
+//                icon.width * 3 - itemView.width/9,
+//                itemView.x  + itemView.width/4
+//            )
+//
+//            animatorSet.playTogether(
+//                buildTranslateIconAnimator(icon, 0f, -(height / 5).toFloat()),
+//                buildTranslateCircleAnimator(circleView, 0f, -(height / 4).toFloat()),
+//                buildTintAnimator(icon,  0,enabledColor)
+//            )
             setCircleSizeAndPosition(
                 circleView,
                 subText.height,
-                icon.width * 3 - itemView.width/9,
-                itemView.x  + itemView.width/4
+                icon.width * 2 + icon.width/2,
+                itemView.x - icon.width/5*3 + itemView.width/3
             )
+
 
             animatorSet.playTogether(
                 buildTranslateIconAnimator(icon, 0f, -(height / 5).toFloat()),
