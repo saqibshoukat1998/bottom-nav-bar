@@ -208,7 +208,7 @@ class BottomNavigationCircles : BottomNavigationView {
                // currentView.drawable.setTint(Color.BLACK)
 
                 animatorSet.playTogether(
-                    buildTranslateIconAnimator(currentView, -(height /4).toFloat(), 0f),
+                    buildTranslateIconAnimator(currentView, -(height /5.4).toFloat(), 0f),
                     buildTranslateCircleAnimator(oldCircle, -(height / 4).toFloat(), 0f),
                     buildTintAnimator(currentView, 0,Color.parseColor("#2754D6"))
                 )
@@ -235,12 +235,9 @@ class BottomNavigationCircles : BottomNavigationView {
                 circleView,
                 subText.height,
                 icon.width * 2 + icon.width/2,
-                itemView.x + itemView.width / 3 - itemView.width / 12
+                itemView.x + itemView.width/3-icon.width/2
             )
-//            itemView.x + itemView.width / 3 - icon.width / 2
-            Log.d("setCircleSizeAndPosition","${itemView.x}")
-
-
+            
             animatorSet.playTogether(
                 buildTranslateIconAnimator(icon, 0f, -(height / 5.4).toFloat()),
                 buildTranslateCircleAnimator(circleView, 0f, -(height / 4).toFloat()),
