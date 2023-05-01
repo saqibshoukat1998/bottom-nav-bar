@@ -8,6 +8,7 @@ import android.graphics.Color
 
 import android.graphics.Typeface
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 
 import android.view.ViewGroup
@@ -230,28 +231,18 @@ class BottomNavigationCircles : BottomNavigationView {
             rootLayout.addView(circleView)
             findViewById<BottomNavigationMenuView>(menuViewGroupId).bringToFront()
 
-//            setCircleSizeAndPosition(
-//                circleView,
-//                subText.height,
-//                icon.width * 3 - itemView.width/9,
-//                itemView.x  + itemView.width/4
-//            )
-//
-//            animatorSet.playTogether(
-//                buildTranslateIconAnimator(icon, 0f, -(height / 5).toFloat()),
-//                buildTranslateCircleAnimator(circleView, 0f, -(height / 4).toFloat()),
-//                buildTintAnimator(icon,  0,enabledColor)
-//            )
             setCircleSizeAndPosition(
                 circleView,
                 subText.height,
                 icon.width * 2 + icon.width/2,
-                itemView.x - icon.width/5*3 + itemView.width/3
+                itemView.x + itemView.width / 3 - itemView.width / 12
             )
+//            itemView.x + itemView.width / 3 - icon.width / 2
+            Log.d("setCircleSizeAndPosition","${itemView.x}")
 
 
             animatorSet.playTogether(
-                buildTranslateIconAnimator(icon, 0f, -(height / 5).toFloat()),
+                buildTranslateIconAnimator(icon, 0f, -(height / 5.4).toFloat()),
                 buildTranslateCircleAnimator(circleView, 0f, -(height / 4).toFloat()),
                 buildTintAnimator(icon,  0,enabledColor)
             )
